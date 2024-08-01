@@ -1,6 +1,5 @@
 "use client"
 
-import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import ProductDetail from '../../components/ProductDetails';

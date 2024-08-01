@@ -19,8 +19,7 @@ const HomePage = () => {
 
   return (
     <Layout>
-      <h1>Product Listing</h1>
-      <ul className='grid md:grid-cols-3 lg:grid-cols-4'>
+      <ul className='grid md:grid-cols-3 lg:grid-cols-4 ml-20'>
         {products.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}
