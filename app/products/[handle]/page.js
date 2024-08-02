@@ -8,7 +8,7 @@ import Layout from '../../components/Layout';
 const ProductPage = ({params}) => {
  // const router = useRouter();
   const handle  = params.handle;
-  console.log(handle);
+  //console.log(handle);
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
@@ -16,10 +16,10 @@ const ProductPage = ({params}) => {
     if (handle) {
       const fetchProduct = async () => {
         try {
-          console.log("before")
+          //console.log("before")
           const response = await axios.get(`/api/products/${handle}`);
           setProduct(response.data);
-          console.log(response.data);
+          //console.log(response.data);
         } catch (error) {
           console.error('Error fetching product:', error);
         }
